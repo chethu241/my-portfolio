@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio • Your Name</title>
+  <meta name="description" content="Personal portfolio of Your Name — projects, skills, and contact." />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <nav class="container nav">
+      <a class="brand" href="#home">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <span class="brand-text">Your Name</span>
+      </a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero container">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Your Name</span> 👋</h1>
+      <p class="lead">
+        Full-stack developer crafting clean, accessible, and performant web experiences.
+      </p>
+      <div class="cta">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Hire Me</a>
+      </div>
+      <ul class="quickmeta">
+        <li>📍 Bengaluru, IN</li>
+        <li>🧑‍💻 Available for full-time</li>
+        <li>✉️ you@example.com</li>
+      </ul>
+    </div>
+    <div class="hero-card">
+      <div class="avatar" aria-hidden="true"></div>
+      <div class="hero-stats">
+        <div><strong>4+</strong><span>Years exp.</span></div>
+        <div><strong>25</strong><span>Projects</span></div>
+        <div><strong>12</strong><span>Clients</span></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Projects -->
+  <section id="projects" class="section container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="grid cards">
+      <article class="card">
+        <div class="card-badge">React</div>
+        <h3>TaskFlow</h3>
+        <p>Collaborative task manager with drag-and-drop, real-time sync, and offline support.</p>
+        <div class="tags">
+          <span>React</span><span>Node.js</span><span>Postgres</span>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn btn-small">Live</a>
+          <a href="#" class="btn btn-ghost btn-small">Code</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-badge">Python</div>
+        <h3>VisionGuard</h3>
+        <p>Fake profile detection using image forensics and metadata analysis.</p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span><span>Flask</span>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn btn-small">Live</a>
+          <a href="#" class="btn btn-ghost btn-small">Code</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-badge">Next.js</div>
+        <h3>EduHub</h3>
+        <p>E-learning platform with interactive quizzes, notes, and progress tracking.</p>
+        <div class="tags">
+          <span>Next.js</span><span>Prisma</span><span>MySQL</span>
+        </div>
+        <div class="actions">
+          <a href="#" class="btn btn-small">Live</a>
+          <a href="#" class="btn btn-ghost btn-small">Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section container">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid skills">
+      <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">JavaScript</div>
+      <div class="chip">React</div><div class="chip">Node.js</div><div class="chip">Express</div>
+      <div class="chip">Python</div><div class="chip">Django</div><div class="chip">SQL</div>
+      <div class="chip">Git & GitHub</div><div class="chip">Docker</div><div class="chip">Linux</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section container about">
+    <div class="about-card">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a developer who enjoys turning complex problems into elegant, user-friendly solutions.
+        I care about accessibility, performance, and a delightful developer experience.
+      </p>
+      <p>
+        When I'm not coding, you'll find me reading, sketching UI ideas, or mentoring juniors.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container contact">
+    <div class="contact-card">
+      <h2 class="section-title">Contact</h2>
+      <p>Want to work together or just say hi? Drop a message below.</p>
+      <form class="form" onsubmit="event.preventDefault(); alert('Thanks! I will get back to you soon.');">
+        <label>
+          <span>Name</span>
+          <input type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label class="full">
+          <span>Message</span>
+          <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+        </label>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+</body>
+</html>
